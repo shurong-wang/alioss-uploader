@@ -1,0 +1,390 @@
+body {
+    font: 13px Verdana; 
+    background: #eee; 
+    color: #333;
+}
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ RESTYLE TAG ]*/
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+  }
+  
+  /*---------------------------------------------*/
+  a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+    color: #a64bf4;
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  input:focus::-webkit-input-placeholder { color:transparent; }
+  input:focus:-moz-placeholder { color:transparent; }
+  input:focus::-moz-placeholder { color:transparent; }
+  input:focus:-ms-input-placeholder { color:transparent; }
+  
+  textarea:focus::-webkit-input-placeholder { color:transparent; }
+  textarea:focus:-moz-placeholder { color:transparent; }
+  textarea:focus::-moz-placeholder { color:transparent; }
+  textarea:focus:-ms-input-placeholder { color:transparent; }
+  
+  input::-webkit-input-placeholder { color: #adadad;}
+  input:-moz-placeholder { color: #adadad;}
+  input::-moz-placeholder { color: #adadad;}
+  input:-ms-input-placeholder { color: #adadad;}
+  
+  textarea::-webkit-input-placeholder { color: #adadad;}
+  textarea:-moz-placeholder { color: #adadad;}
+  textarea::-moz-placeholder { color: #adadad;}
+  textarea:-ms-input-placeholder { color: #adadad;}
+  
+  /*---------------------------------------------*/
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Utility ]*/
+  .txt1 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+  }
+  
+  .txt2 {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    text-transform: uppercase;
+  }
+  
+  .bg1 {background-color: #3b5998}
+  .bg2 {background-color: #1da1f2}
+  .bg3 {background-color: #ea4335}
+  
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ uploader ]*/
+  .main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .container {
+    width: 100%;  
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('images/background.jpeg')
+  }
+  
+  .wrap {
+    width: 60%;
+    min-width: 530px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(2px);
+
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, .2)
+  }
+  
+  
+
+  
+  /*------------------------------------------------------------------
+  [ Form ]*/
+  
+  .upload-form {
+    width: 100%;
+  }
+  
+  .upload-form-title {
+    display: block;
+    font-family: Poppins-Bold;
+    font-weight: 500;
+    font-size: 39px;
+    color: #333333;
+    line-height: 2em;
+    text-align: center;
+  }
+  
+  /*------------------------------------------------------------------
+  [ Button ]*/
+  .container-form-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .wrap-form-btn {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 auto;
+  
+    box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -moz-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -webkit-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -o-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+    -ms-box-shadow: 0 5px 30px 0px rgba(3, 216, 222, 0.2);
+  }
+  
+  .upload-form-bgbtn {
+    position: absolute;
+    z-index: -1;
+    width: 300%;
+    height: 100%;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -o-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: -moz-linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    background: linear-gradient(right, #00dbde, #fc00ff, #00dbde, #fc00ff);
+    top: 0;
+    left: -100%;
+  
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+  
+  .upload-form-btn {
+    font-family: Poppins-Medium;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+  
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .wrap-form-btn:hover .upload-form-bgbtn {
+    left: 0;
+  }
+  
+  /*//////////////////////////////////////////////////////////////////
+  [ Responsive ]*/
+  
+  @media (max-width: 100px) {
+    .wrap {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .wrap {
+      width: 100%;
+    }
+  }
+
+
+/*//////////////////////////////////////////////////////////////////
+  [ Rewrite ]*/
+
+.plupload_header_title {
+  font-size: 22px;
+    line-height: 2em;
+    color: #333;
+}
+.plupload_header_text {
+    white-space: nowrap;
+    margin-top: -8px;
+}
+
+.plupload_view_switch .ui-button {
+    bottom: 6px;
+    margin-right: -0.1em;
+}
+
+.ui-widget-content {
+    border: none;
+    background: none;
+    /* 不要设高度 */
+}
+
+.plupload_droptext {
+    font-size: 18px;
+    color: #ffffff60;
+    line-height: 1em;
+    margin-top: 20px;
+}
+
+.plupload_droptext ul {
+  width: 370px !important;
+  margin: 0 auto;
+  margin-top: 6px;
+}
+
+.plupload_droptext ul li {
+  line-height: 1.2em;
+  text-align: left;
+  font-size: 14px;
+  list-style: circle;
+}
+
+
+
+.plupload_view_thumbs .plupload_file {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0);
+    color: #666;
+    border: none;
+    backdrop-filter: blur(2px);
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default,
+.ui-widget-header {
+    border: 0;
+    background: #ffffff80 repeat-x;
+    /* opacity: .8; */
+}
+
+.plupload_filelist_header {
+    margin-top: 1px;
+}
+
+.plupload_file_thumb {
+    background: #00000010;
+}
+
+.plupload_button {
+    border: 1px solid #9980e9 !important;
+    background: #ffffff60 !important;
+}
+
+.plupload_filelist_footer .plupload_button {
+    padding: 2px 0;
+    /* font-size: 14px; */
+}
+
+.plupload_file_status, .plupload_file_size, .plupload_file_action {
+    font-weight: 100;
+    color: #ffffff90;
+}
+
+.plupload_file_name {
+    color: #666;
+}
+
+.plupload_filelist_content .plupload_file_size {
+   position: relative;
+   top: 4px;
+   text-align: right;
+   color: #00000070;
+}
+
+.plupload_content {
+  bottom: 59px;
+  background-image: url('images/background.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.plupload_filelist_footer .plupload_button {
+  border: none!important;
+  background: #e9ecef;
+  box-shadow: 3px 3px 6px #00000040;
+}
+
+
+.plupload_filelist_footer .ui-button-text {
+  font-size: 18px;
+}
